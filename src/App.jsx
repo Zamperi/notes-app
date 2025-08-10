@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Frontpage from './components/Frontpage';
-import Navbar from './components/NavBar';
+import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Footer from './components/Footer';
 import Analytics from './components/Analytics';
