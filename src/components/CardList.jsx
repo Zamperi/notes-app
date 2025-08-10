@@ -46,7 +46,7 @@ const initialCards =
 function Reducer(state, action){
     switch(action.type){
         case "ADD":
-            return state;
+            return [...state, action.payload];
         
         case "REMOVE":
             return state;
@@ -138,7 +138,7 @@ function CardList(){
                 <option>Valmis</option>
             </select>
             <div className="buttons">
-                <button type="submit">Tallenna</button>
+                <button type="submit" onClick={()=>dispatch({type: "ADD", payload: {id: crypto.randomUUID(), headline: "Tyhjä", description: "tyhjä"}})}>Tallenna</button>
                 <button type="button">Tyhjennä</button>
             </div>
         </div>
