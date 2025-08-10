@@ -1,0 +1,32 @@
+:root{
+  --bg-color: #242424;
+  --text-color: #ffffff;
+  --font: "Roboto", sans-serif;
+  --font-size: 1rem;
+  --error-bg-color: rgb(255, 0, 0);
+  --error-text-color: black;
+  --effect-color: rgb(159, 93, 26);
+  --effect-color2: #4c94ff;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+}
